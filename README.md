@@ -2,5 +2,5 @@
 
 Docker base image used for micro service containers.
 
-Alpine : 3.4
-GLIBC  : 2.23-r3 
+Alpine: 3.4
+GLIBC: 2.23-r3 
