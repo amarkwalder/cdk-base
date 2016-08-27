@@ -20,3 +20,5 @@ RUN	apk add --no-cache --update-cache curl ca-certificates bash && \
 	echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
 
 WORKDIR /
+
+CMD ["/bin/bash"]
