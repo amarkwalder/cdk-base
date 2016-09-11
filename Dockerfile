@@ -19,7 +19,7 @@ RUN	apk --update upgrade && \
 	echo "servers pool.ntp.org" > /etc/ntpd.conf && \
 	cp /usr/share/zoneinfo/Europe/Zurich /etc/localtime && \
 	echo "Europe/Zurich" >  /etc/timezone && \
-	apk del ca-certificates && \
+	apk del curl ca-certificates && \
 	rm -rf /tmp/* /var/cache/apk/* && \
 	echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
 
